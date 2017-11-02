@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+    ansible:
+        image: aikchar/ansible:latest
+        tty: true
+        volumes:
+        - "./ansible:/srv/ansible"
