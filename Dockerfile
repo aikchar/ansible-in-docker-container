@@ -18,7 +18,8 @@ RUN apk update && \
     apk del musl-dev && \
     apk del libffi-dev && \
     apk del openssl-dev && \
-    mkdir -p /srv/ansible
+    mkdir -p /srv/ansible && \
+    mkdir -p /root/.ssh
 
 WORKDIR /srv/ansible
 
